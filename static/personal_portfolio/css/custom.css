@@ -1,0 +1,39 @@
+.navbar-nav .nav-link {
+    color: rgba(0,0,0,1) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.5) !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#blogtitle {
+    font-size: 6rem;
+}
+.ig-home{
+    width: 416px;
+    height: 216px;
+}
+.mr-left{
+    margin-left: 73%;
+}
+
+.img-cert{
+    width: 366px;
+    height: 216px;
+}
+
+.row-cert{
+    margin: 0 auto;
+}
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+
+
+{% block blog_detail %}
+<div class="container ">
+    <h1 class="text-center mt-5 blog-title-descr" id="blogdetailtitle">{{ blog.title }}</h1>
+
+    <div class="img-own-diteil">
+        <img src="{{ MEDIA_URL }}{{ blog.image }}" alt="Image" class="img_blog_detail img-responsive">
+    </div>
+
+    <p class="blog-text-descr">{{ blog.description|safe }}</p>
+    <h5 class="text-right text-muted mb-5">{{ blog.date|date:'F j Yг.' }}</h5>
+</div>
+{% endblock blog_detail  %}
