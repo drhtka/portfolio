@@ -21,6 +21,7 @@
     </div>
     <div class="row justify-content-center mb-3">
         <div class="col-md-9 text-center">
+
             <h1 id="hometext" class="font-weight-bold font_work">Портфолио Дмитрий  😊</h1>
         </div>
     </div>
@@ -42,15 +43,15 @@
 </div>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="container">
-                <h2 class="mt-5 font_work_main text-center">HTML CSS JS Python/Django</h2>
+            <div class="container col-md-9">
+                <h2 class="mt-5 font_work_main text-center">HTML CSS JS Python/Django 222</h2>
                 <hr class="hr-work">
                     <div class="row">
                         {% for project in projects %}
                             {% if project.adaptiv %}
                                 <div class="col-lg-4 col-md-6 col-sm-6 col-12 col-xl-4 item_element mt-2 mb-2">
                                     {% if project.url %}
-                                        <a href="{{ project.url  }}">
+                                        <a href="{{ project.url }}" target="_blank">
                                             <img src="{{ project.image.url }}" class="img-fluid mb-2 ig-home img-responsive">
                                         </a>
                                     {% else %}
@@ -74,7 +75,7 @@
                     {% if project.adaptiv != True %}
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item_element mt-2 mb-2">
                             {% if project.url %}
-                                <a href="{{ project.url  }}">
+                                <a href="{{ project.url }}" target="_blank">
                                     <img src="{{ project.image.url }}" class="img-fluid mb-2 ig-home img-responsive">
                                 </a>
                             {% else %}

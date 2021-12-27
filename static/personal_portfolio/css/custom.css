@@ -1,3 +1,10 @@
+body {
+    font-family: Comic Sans MS, sans-serif;
+    /*font-family: Arial, Verdana, Tahoma, sans-serif;*/
+}
+.my_body{
+    background-color: rgba(223, 224, 226, 0.43);
+}
 .navbar-nav .nav-link {
     color: rgba(0,0,0,1) !important;
 }
@@ -6,29 +13,261 @@
     color: rgba(0,0,0,.5) !important;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-}
 
 #blogtitle {
     font-size: 6rem;
 }
 .ig-home{
-    width: 416px;
-    height: 216px;
+    /*width: 416px;*/
+    /*height: 216px;*/
+    width: 100%;
+    height: 50%;
 }
 .mr-left{
     margin-left: 73%;
 }
 
 .img-cert{
-    width: 366px;
-    height: 216px;
+    width: 98%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.big_photo{
+    width: 500px;
+    height: 500px;
 }
 
-.row-cert{
+.bg-dark-{
+    background-color: rgba(16, 101, 193, 0.59);
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+}
+.font_work{
+    color: rgba(16, 101, 193, 0.59);
+    font-weight: bolder;
+}
+
+.font_work_main{
+    color: rgba(16, 101, 193, 0.59);
+    font-weight: bolder;
+    /*font-size: 51px;*/
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.text-descr{
+    margin: 0 auto;
+    width: 95%;
+    text-align: justify;
+}
+.img-cert-left{
+    padding-left: 0px;
+}.img-cert-left{
+    padding-left: 0px;
+}
+
+
+.link-main{
+    display: block;
+    padding: 25px 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.link-main:hover{
+    color: #0a58ca !important;
+}
+
+.nav-row{
+    flex-direction: row;
+    align-items: center;
+    width: inherit;
+}
+
+.navbar-expand-sm .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.text-color-blog{
+    color: #0a58ca;
+}
+
+.text-color-blog:hover{
+    color: white !important;
+}
+
+.hr-home{
+    width: 70%;
+    color: #6c9ed6;
+    padding: 2px;
     margin: 0 auto;
 }
+
+.hr-work{
+    color: #6c9ed6;
+    padding: 2px;
+}
+.item_element{
+    height: 50%;
+}
+
+/************** BLOG *********************/
+
+.img_blog{
+    width: 92%;
+    height: 94%;
+    /*width: 257px;  420*/
+    /*height: 196px;  475*/
+}
+
+.img_blog_detail{
+    width: 410px;
+    height: 340px;
+}
+.img-own-diteil{
+    float: left;
+    /*padding-right: 10px;*/
+    margin-right: 36px;
+    margin-bottom: 18px;
+}
+
+.blog-title-descr{
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.blog-text-descr{
+    text-align: justify;
+}
+
+p.blog-text-descr{
+
+}
+
+
+/************************* Modal *************************/
+.modal-sertificate{
+    position: fixed;
+    top: 0 !important;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    /*background-color: black;*/
+        /*background-color: var(--basic-extra-light);*/
+    /*background-image: url(../img/pattern-light.jpg);*/
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+}
+
+/************************* Modal close крестик в модалк*************************/
+
+
+.modal-close::before,
+.modal-close::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    /*background-color: var(--basic-dark);*/
+    background-color: red;
+    color: red;
+}
+
+.modal-close::before{
+    transform: rotate(45deg);
+
+}
+.modal-close::after{
+    transform: rotate(-45deg);
+}
+
+
+/************************* Modal map *************************/
+.modal-sert{
+    display: none;
+    margin-top: 10%;
+    width: 905px;
+    height: 621px;
+    /*overflow-y: hidden;*/
+    /* border: 7px solid white; */
+}
+
+/*.modal-sert img {*/
+/*    display: block;*/
+/*}*/
+
+/*.modal-sert img{*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*    border: none;*/
+/*}*/
+
+.layer{
+    height: 2100px;
+    width: 100%;
+    background: grey;
+    opacity: 0.6;
+    position: absolute;
+    /*z-index: 2000;*/
+    display: none;
+    top: 98px
+}
+
+.modal-show {
+    display: block;
+    /* -webkit-animation: bounce 0.6s; */
+    /*animation: bounce 0.6s;*/
+}
+
+.sert_src{
+    width: 100%;
+    height: 100%;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    left: 915px;
+    /*right: 34px;*/
+    width: 22px;
+    height: 22px;
+    border: 0;
+    cursor: pointer !important;
+    /*background-color: red;*/
+    z-index: 1000;
+    /*color: #006b1b;*/
+    background: transparent;
+}
+
+/***************** SWITCH ADAPTIV *****************/
+
+.switch-container{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-tabs-switch{
+    border-bottom: none;
+}
+.home-tab-font{
+    font-size: 30px;
+}
+.profile-tab-font{
+    font-size: 30px;
+}
+
+
+
+/************** MEDIA *********************/
+
+
+
 @media (min-width: 992px) {
     #hometext {
         font-size: 4rem;
@@ -36,4 +275,181 @@ body {
     #blogdetailtitle {
         font-size: 5rem;
     }
+}
+@media  (min-width: 320px) and (max-width: 454px){
+    .img-own-diteil {
+        margin: 0 auto !important;
+        /*margin-right: 120px;*/
+        margin-bottom: 8px;
+        width: 296px;
+        height: 266px;
+        float: none;
+    }
+    .img_blog_detail {
+        width: 296px;
+        height: 242px;
+        margin: 0 auto !important;
+    }
+    .modal-show{
+        display: none;
+    }
+    .img-cert{
+        cursor: auto;
+    }
+
+}
+
+@media  (min-width: 455px) and (max-width: 575px) {
+    .img-own-diteil {
+        margin: 0 auto !important;
+        /*margin-right: 120px;*/
+        margin-bottom: 8px;
+        width: 390px;
+        height: 297px;
+        float: none;
+    }
+    .img_blog_detail {
+        width: 390px;
+        height: 279px;
+        margin: 0 auto !important;
+    }
+    .modal-show{
+        display: none;
+    }
+    .img-cert{
+        cursor: auto;
+    }
+
+}
+
+@media  (min-width: 220px) and (max-width: 575px){
+    .main_logo_col{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .home-tab-font{
+        font-size:15px;
+    }
+    .profile-tab-font{
+        font-size: 15px;
+    }
+
+
+
+
+}
+/* */
+@media  (min-width: 576px) and (max-width: 767px) {
+    .ig-home {
+        width: 100%;
+        height: 207px ;
+    }
+
+    .img_blog{
+        width: 100%;
+        height: 62%;
+        margin-top: 39%;
+        /*width: 257px;*/
+        /*height: 196px;*/
+    }
+    .img-own-diteil {
+        margin: 0 auto !important;
+        /*margin-right: 120px;*/
+        margin-bottom: 8px;
+        width: 390px;
+        height: 297px;
+        float: none;
+    }
+    .img_blog_detail {
+        width: 390px;
+        height: 279px;
+        margin: 0 auto !important;
+    }
+    .modal-show{
+        display: none;
+    }
+    .img-cert{
+        cursor: auto;
+    }
+
+}
+
+@media  (min-width: 768px)  and (max-width: 991px) {
+    .ig-home {
+        width: 100%;
+        height: 207px ;
+    }
+    .img_blog{
+        width: 100%;
+        height: 67%;
+        margin-top: 18%;
+        /*width: 257px;*/
+        /*height: 196px;*/
+    }
+
+    .modal-sertificate {
+        top: 1445px !important;
+        width: 700px !important;
+        height: 12% !important;
+    }
+    .modal-sert {
+        overflow-y: visible;
+    }
+    .modal-close::before, .modal-close::after{
+        left: -161px;
+    }
+    .sert_src {
+        width: 700px;
+    }
+    .modal-close {
+        left: 867px;
+
+    }
+}
+
+@media  (min-width: 991px) and (max-width: 1199px) {
+    .ig-home {
+        width: 100%;
+        height: 194px ;
+    }
+    .img_blog{
+        width: 100%;
+        height: 94%;
+        /*width: 257px;*/
+        /*height: 196px;*/
+    }
+    .modal-sertificate {
+        top: 1204px !important;
+    }
+
+}
+
+
+@media  (min-width: 1200px) and (max-width: 1399px) {
+    .ig-home {
+        width: 100%;
+        height: 217px ;
+    }
+    .img_blog{
+        width: 100%;
+        height: 94%;
+        /*width: 257px;*/
+        /*height: 196px;*/
+    }
+    .modal-sertificate {
+        top: 1204px !important;
+    }
+
+}
+/*and (max-width: 1199px)  and (max-width: 1399px) */
+
+@media  (min-width: 1400px) and (max-width: 2100px) {
+    .ig-home {
+        width: 100%;
+        height: 261px;
+    }
+
+
+
 }

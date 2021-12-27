@@ -56,12 +56,6 @@
 {% endcomment %}
 <body >
 
-{#<div class="container-fluid mt-3">#}
-{#    <br>#}
-{#    <h3>Sticky Navbar</h3>#}
-{#    <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>#}
-{#    <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>#}
-{#</div>#}
 {% block header %}
 
     <nav  id="topNav" class="navbar navbar-expand-sm bg-dark- containe navbar-dark sticky-top">
@@ -81,7 +75,7 @@
                                 <a class="text-white text-decoration-none link-main" href="{% url 'home' %}">Главная</a>
                             </li>
                             <li class="nav-item">
-                                <a class="text-white font-weight-bold text-decoration-none link-main" href="{% static "personal_portfolio/resume.pdf" %}">Резюме</a>
+                                <a class="text-white font-weight-bold text-decoration-none link-main" href="{% static "personal_portfolio/pdf/resume.pdf" %}" target="_blank">Резюме</a>
                             </li>
                             <li>
                                 <a href="{% url 'blog:all_blogs' %}" class="text-color-blog font-weight-bold text-decoration-none link-main">Блог</a>
@@ -105,7 +99,7 @@
 <nav id="topNav" class="navbar navbar-expand-md navbar-light">
     <div class="container mr-left">
         <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="{% static "personal_portfolio/img/logo.jpg" %}" width="90" height="60" class="d-inline-block align-top" alt="Моёлого">
+            <img src="{% static "personal_portfolio/img/logo_old.jpg" %}" width="90" height="60" class="d-inline-block align-top" alt="Моёлого">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
