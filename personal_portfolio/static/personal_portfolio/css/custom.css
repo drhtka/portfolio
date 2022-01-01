@@ -34,7 +34,7 @@ html {
 }
 
 .img-cert{
-    width: 98%;
+    width: 100%;
     height: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -148,6 +148,7 @@ p.blog-text-descr{
 }
 
 
+
 /************************* Modal *************************/
 .modal-sertificate{
     position: fixed;
@@ -190,7 +191,7 @@ p.blog-text-descr{
 }
 
 
-/************************* Modal map *************************/
+/************************* Modal sert *************************/
 .modal-sert{
     display: none;
     margin-top: 10%;
@@ -199,27 +200,22 @@ p.blog-text-descr{
     /*overflow-y: hidden;*/
     /* border: 7px solid white; */
 }
+/*.modal-sertificate{*/
+/*    position: fixed;*/
+/*    top: 0 !important;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    margin: 0 auto;*/
+/*    !*background-color: black;*!*/
+/*    !*background-color: var(--basic-extra-light);*!*/
+/*    !*background-image: url(../img/pattern-light.jpg);*!*/
+/*    background-position: 0 0;*/
+/*    background-repeat: repeat;*/
+/*    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);*/
 
-/*.modal-sert img {*/
-/*    display: block;*/
 /*}*/
 
-/*.modal-sert img{*/
-/*    position: relative;*/
-/*    z-index: 2;*/
-/*    border: none;*/
-/*}*/
-
-.layer{
-    height: 2100px;
-    width: 100%;
-    background: grey;
-    opacity: 0.6;
-    position: absolute;
-    /*z-index: 2000;*/
-    display: none;
-    top: 98px
-}
 
 .modal-show {
     display: block;
@@ -246,6 +242,28 @@ p.blog-text-descr{
     /*color: #006b1b;*/
     background: transparent;
 }
+
+
+/*.modal-sert img {*/
+/*    display: block;*/
+/*}*/
+
+/*.modal-sert img{*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*    border: none;*/
+/*}*/
+
+/*.layer{*/
+/*    height: 2100px;*/
+/*    width: 100%;*/
+/*    background: grey;*/
+/*    opacity: 0.6;*/
+/*    position: absolute;*/
+/*    !*z-index: 2000;*!*/
+/*    display: none;*/
+/*    top: 98px*/
+/*}*/
 
 /***************** SWITCH ADAPTIV *****************/
 
@@ -300,6 +318,10 @@ p.blog-text-descr{
         cursor: auto;
     }
 
+    .content{
+        margin-left: 1%;
+    }
+
 }
 
 @media  (min-width: 455px) and (max-width: 575px) {
@@ -323,6 +345,7 @@ p.blog-text-descr{
         cursor: auto;
     }
 
+
 }
 
 @media  (min-width: 220px) and (max-width: 575px){
@@ -337,9 +360,9 @@ p.blog-text-descr{
     .profile-tab-font{
         font-size: 15px;
     }
-
-
-
+    .content{
+        margin-left: 1%;
+    }
 
 }
 /* */
@@ -376,9 +399,11 @@ p.blog-text-descr{
         cursor: auto;
     }
 
+
 }
 
 @media  (min-width: 768px)  and (max-width: 991px) {
+
     .ig-home {
         width: 100%;
         height: 207px ;
@@ -391,24 +416,75 @@ p.blog-text-descr{
         /*height: 196px;*/
     }
 
-    .modal-sertificate {
+    /*.modal-sertificate {*/
+    /*    top: 1445px !important;*/
+    /*    width: 700px !important;*/
+    /*    height: 12% !important;*/
+    /*}*/
+    /*.modal-sert {*/
+    /*    overflow-y: visible;*/
+    /*}*/
+
+    .modal-sert{
+        margin-top: 10%;
+        width: 905px;
+        height: 621px;
+        /*overflow-y: hidden;*/
+        /* border: 7px solid white; */
+    }
+    .modal-sertificate{
+        position: fixed;
         top: 1445px !important;
         width: 700px !important;
         height: 12% !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        /*background-color: black;*/
+        /*background-color: var(--basic-extra-light);*/
+        /*background-image: url(../img/pattern-light.jpg);*/
+        background-position: 0 0;
+        background-repeat: repeat;
+        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
     }
-    .modal-sert {
-        overflow-y: visible;
-    }
+
+    /*.modal-close{*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    left: 915px;*/
+    /*    !*right: 34px;*!*/
+    /*    width: 22px;*/
+    /*    height: 22px;*/
+    /*    border: 0;*/
+    /*    cursor: pointer !important;*/
+    /*    !*background-color: red;*!*/
+    /*    z-index: 1000;*/
+    /*    !*color: #006b1b;*!*/
+    /*    background: transparent;*/
+    /*}*/
+
     .modal-close::before, .modal-close::after{
         left: -161px;
     }
-    .sert_src {
-        width: 700px;
-    }
+    /*.sert_src {*/
+    /*    width: 700px;*/
+    /*}*/
     .modal-close {
-        left: 867px;
+        left: 875px;
 
     }
+    .layer{
+         height: 3070px;
+         width: 100%;
+         background: grey;
+         opacity: 0.6;
+         position: absolute;
+         /*z-index: 2000;*/
+         display: none;
+         top: 98px
+     }
 }
 
 @media  (min-width: 991px) and (max-width: 1199px) {
@@ -422,8 +498,45 @@ p.blog-text-descr{
         /*width: 257px;*/
         /*height: 196px;*/
     }
-    .modal-sertificate {
-        top: 1204px !important;
+
+    .layer{
+        height: 2070px;
+        width: 100%;
+        background: grey;
+        opacity: 0.6;
+        position: absolute;
+        /*z-index: 2000;*/
+        display: none;
+        top: 98px
+    }
+
+    .modal-sert{
+        margin-top: 10%;
+        width: 905px;
+        height: 621px;
+        /*overflow-y: hidden;*/
+        /* border: 7px solid white; */
+    }
+    .modal-sertificate{
+        position: fixed;
+        top: 1445px !important;
+        width: 700px !important;
+        height: 12% !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        /*background-color: black;*/
+        /*background-color: var(--basic-extra-light);*/
+        /*background-image: url(../img/pattern-light.jpg);*/
+        background-position: 0 0;
+        background-repeat: repeat;
+        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+    }
+    .modal-close {
+        left: 708px;
+
     }
 
 }
@@ -437,18 +550,154 @@ p.blog-text-descr{
     .img_blog{
         width: 100%;
         height: 94%;
-        /*width: 257px;*/
-        /*height: 196px;*/
     }
-    .modal-sertificate {
-        top: 1204px !important;
+
+    .layer{
+        height: 2070px;
+        width: 100%;
+        background: grey;
+        opacity: 0.6;
+        position: absolute;
+        /*z-index: 2000;*/
+        display: none;
+        top: 98px
+    }
+    .modal-sert {
+        margin-top: 9% !important;
+        width: 727px;
+        height: 470px;
+    }
+
+    .sert_src{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*.modal-sert{*/
+    /*    margin-top: 10%;*/
+    /*    width: 905px;*/
+    /*    height: 621px;*/
+    /*    !*overflow-y: hidden;*!*/
+    /*    !* border: 7px solid white; *!*/
+    /*}*/
+    /*.modal-sertificate{*/
+    /*    position: fixed;*/
+    /*    top: 1445px !important;*/
+    /*    width: 700px !important;*/
+    /*    height: 12% !important;*/
+    /*    bottom: 0;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    margin: 0 auto;*/
+    /*    !*background-color: black;*!*/
+    /*    !*background-color: var(--basic-extra-light);*!*/
+    /*    !*background-image: url(../img/pattern-light.jpg);*!*/
+    /*    background-position: 0 0;*/
+    /*    background-repeat: repeat;*/
+    /*    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);*/
+
+    /*}*/
+    .modal-close {
+        left: 732px;
+
     }
 
 }
-/*and (max-width: 1199px)  and (max-width: 1399px) */
-@media  (min-width: 1400px) and (max-width: 2100px) {
+
+@media  (min-width: 1400px) and (max-width: 1599px) {
     .ig-home {
         width: 100%;
         height: 261px;
     }
+
+    .layer{
+        height: 2070px;
+        width: 100%;
+        background: grey;
+        opacity: 0.6;
+        position: absolute;
+        /*z-index: 2000;*/
+        display: none;
+        top: 98px
+    }
+    .modal-sert {
+        margin-top: 8% !important;
+    }
+
+    /*.modal-sert{*/
+    /*    margin-top: 10%;*/
+    /*    width: 905px;*/
+    /*    height: 621px;*/
+    /*    !*overflow-y: hidden;*!*/
+    /*    !* border: 7px solid white; *!*/
+    /*}*/
+    /*.modal-sertificate{*/
+    /*    position: fixed;*/
+    /*    top: 1445px !important;*/
+    /*    width: 700px !important;*/
+    /*    height: 12% !important;*/
+    /*    bottom: 0;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    margin: 0 auto;*/
+    /*    !*background-color: black;*!*/
+    /*    !*background-color: var(--basic-extra-light);*!*/
+    /*    !*background-image: url(../img/pattern-light.jpg);*!*/
+    /*    background-position: 0 0;*/
+    /*    background-repeat: repeat;*/
+    /*    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);*/
+
+    /*}*/
+    /*.modal-close {*/
+    /*    left: 708px;*/
+
+    /*}*/
+
+}
+
+@media  (min-width: 1600px){
+    .ig-home {
+        width: 100%;
+        height: 261px;
+    }
+
+    .layer{
+        height: 2070px;
+        width: 100%;
+        background: grey;
+        opacity: 0.6;
+        position: absolute;
+        /*z-index: 2000;*/
+        display: none;
+        top: 98px
+    }
+
+    /*.modal-sert{*/
+    /*    margin-top: 10%;*/
+    /*    width: 905px;*/
+    /*    height: 621px;*/
+    /*    !*overflow-y: hidden;*!*/
+    /*    !* border: 7px solid white; *!*/
+    /*}*/
+    /*.modal-sertificate{*/
+    /*    position: fixed;*/
+    /*    top: 1445px !important;*/
+    /*    width: 700px !important;*/
+    /*    height: 12% !important;*/
+    /*    bottom: 0;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    margin: 0 auto;*/
+    /*    !*background-color: black;*!*/
+    /*    !*background-color: var(--basic-extra-light);*!*/
+    /*    !*background-image: url(../img/pattern-light.jpg);*!*/
+    /*    background-position: 0 0;*/
+    /*    background-repeat: repeat;*/
+    /*    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);*/
+
+    /*}
+    .modal-close {
+        left: 708px;
+
+    }*/
 }
