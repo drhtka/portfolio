@@ -27,6 +27,7 @@
     </div>
     </div>
 
+
     {% comment %}{% endcomment %}
 <div class="container switch-container">
     <ul class="nav nav-tabs nav-tabs-switch" id="myTab" role="tablist">
@@ -35,6 +36,9 @@
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link profile-tab-font" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Не адаптив</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link profile-tab-font" id="drf-tab" data-bs-toggle="tab" data-bs-target="#drf" type="button" role="tab" aria-controls="profile" aria-selected="false">DRF</button>
         </li>
 {#        <li class="nav-item" role="presentation">#}
 {#            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>#}
@@ -57,7 +61,9 @@
                                     {% else %}
                                         <img src="{{ project.image.url }}" class="img-fluid mb-2 ig-home img-responsive">
                                     {% endif %}
+                                    <a href="{{ project.url }}" target="_blank" class="text-decoration-none">
                                     <h3 class="font_work text-center mb-3 mt-3">{{ project.title }}</h3>
+                                    </a>
                                     <p class="text-wrap text-descr mb-1 mt-1" >{{ project.description }}</p>
                                 </div>
                             {% endif %}
@@ -72,7 +78,7 @@
                 <hr class="hr-work">
                 <div class="row">
                 {% for project in projects %}
-                    {% if project.adaptiv != True %}
+                    {% if project.adaptiv != True and project.adaptiv != None %}
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item_element mt-2 mb-2">
                             {% if project.url %}
                                 <a href="{{ project.url }}" target="_blank">
@@ -81,7 +87,9 @@
                             {% else %}
                                 <img src="{{ project.image.url }}" class="img-fluid mb-2 ig-home img-responsive">
                             {% endif %}
+                            <a href="{{ project.url }}" target="_blank" class="text-decoration-none">
                             <h3 class="font_work text-center mb-3 mt-3">{{ project.title }}</h3>
+                            </a>
                             <p class="text-wrap text-descr mb-1 mt-1" >{{ project.description }}</p>
                         </div>
                     {% endif %}
@@ -89,6 +97,35 @@
                 </div>
             </div>
         </div>
+
+        <div class="tab-pane fade" id="drf" role="tabpanel" aria-labelledby="drf-tab">
+            <div class="container col-md-9">
+                <h2 class="mt-5 font_work_main text-center">HTML CSS JS Python/Django</h2>
+                <hr class="hr-work">
+                <div class="row">
+                    {% for project in projects %}
+
+                        {% if project.adaptiv == None %}
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item_element mt-2 mb-2">
+                                {% if project.url %}
+                                    <a href="{{ project.url }}" target="_blank">
+                                        <img src="{{ project.image.url }}" class="img-fluid mb-2 ig-home img-responsive">
+                                    </a>
+                                {% else %}
+                                    <img src="{{ project.image.url }}" class="img-fluid mb-2 ig-home img-responsive">
+                                {% endif %}
+                                <a href="{{ project.url }}" target="_blank" class="text-decoration-none">
+                                    <h3 class="font_work text-center mb-3 mt-3">{{ project.title }}</h3>
+                                </a>
+                                <p class="text-wrap text-descr mb-1 mt-1" >{{ project.description }}</p>
+                            </div>
+
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div
 
 {#        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>#}
     </div>
@@ -100,7 +137,7 @@
 {% block certificate %}
 
     <div class="container container-layer">
-        <h2 class="mt-5 font_work text-center">Мои сертификаты   ввва</h2>
+        <h2 class="mt-5 font_work text-center">Мои сертификаты</h2>
         <hr class="hr-home">
         <div class="row row-cert justify-content-center">
             <div class="col-lg-3 col-md-4  col-lg-3 col-xl-3 img-cert-left mt-2 mb-2 mr-3 ml-3">
