@@ -34,5 +34,5 @@
         JavaScript
         Python 
         Django
-        SQLLite
+        SQLite
 
