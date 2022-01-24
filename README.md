@@ -32,6 +32,7 @@
         HTML
         CSS
         JavaScript
-        Pyrhon 
-        SQL
+        Python 
+        Django
+        SQLLite
 

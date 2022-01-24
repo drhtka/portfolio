@@ -5,7 +5,7 @@
 {% if request.LANGUAGE_CODE == 'ru' %}{% endif %}
 
 {% block content %}
-    <h1 id="blogtitle" class="font-weight-bold text-center">Блог</h1>
+    <h2 id="blogtitle" class="font-weight-bold text-center">Блог</h2>
     <h3 class="text-center mb-5">Автор написал {{ blogs.count }} {{ blogs.count|rupluralize:"пост,поста,постов"   }}</h3>
 
 {% for blog in blogs %}
@@ -21,7 +21,7 @@
                 <a  class="text-decoration-none" href="{% url 'blog:detail' blog.id %}">
                     <h2>{{ blog.title }}</h2>
                 </a>
-                <h5 class="text-muted">{{ blog.date|date:'M d Y'|upper }}</h5>
+                <h5 class="text-muted">{{ blog.date|date:'M Y'|upper }}</h5>
                 <div>{{ blog.description|striptags|truncatewords:45|linebreaks }}</div>
 {#            <h4>{{ blog.description|striptags|truncatechars:100 }}</h4>#}
             </div>
